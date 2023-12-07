@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap");
+
+* {
+	padding: 0;
+	margin: 0;
+	border: none;
+	outline: none;
+	box-sizing: border-box;
+	font-family: "Nanum Gothic", sans-serif;
+}
+
+:root {
+	--bg: linear-gradient(135deg, #ff6b6b, #3a1c71);
+	--first: #ff6b6b;
+	--second: #3a1c71;
+}
+
+::selection {
+	color: var(--bg);
+	background: #fff;
+}
+
+body {
+	background: var(--bg) no-repeat;
+	height: 100svh;
+	color: #fff;
+}
+
+main {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-direction: column;
+	height: 100%;
+}
+
+header {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-block: 20px;
+}
+
+.conv-box {
+	background: #fff;
+	width: 85%;
+	max-width: 500px;
+	margin: 0 auto;
+	border-radius: 8px;
+}
+
+.conv-container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-direction: column;
+	gap: 24px;
+	padding-block: 30px;
+}
+
+.conv-container > input {
+	border: 2px solid #000;
+	text-align: left;
+	align-self: left;
+	width: 80%;
+	border-radius: 5px;
+	padding: 8px 12px;
+	font-size: 20px;
+	caret-color: var(--second);
+}
+
+.conv-container > input:hover,
+.conv-container > input:focus {
+	border-color: var(--second);
+}
+
+.select-btns {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 12px;
+}
+
+.select-btns > div {
+	position: relative;
+}
+
+.select-btns select {
+	appearance: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	background-color: var(--second);
+	border: 1px solid var(--second);
+	border-radius: 5px;
+	width: 60px;
+	padding: 14px;
+	font-size: 14px;
+	color: #fff;
+}
+
+.select-btns select::after {
+	content: "\25BC";
+	position: absolute;
+	top: 50%;
+	right: 10px;
+	transform: translateY(-50%);
+	color: #777;
+	pointer-events: none;
+}
+
+.conv-container > button {
+	display: block;
+	background: var(--first);
+	color: #fff;
+	font-size: 22px;
+	padding: 8px 16px;
+	border-radius: 6px;
+	border: 2px solid var(--first);
+}
+
+.conv-container > button:hover,
+.conv-container > button:focus {
+	background: #fff;
+	border-color: var(--second);
+	color: var(--second);
+}
+
+.result {
+	font-size: 20px;
+	text-align: center;
+	color: #000;
+}
+
+footer {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 20px;
+	width: 60%;
+	padding-block: 24px;
+}
+
+footer > li {
+	list-style: none;
+	font-size: 24px;
+}
+
+footer a {
+	text-decoration: none;
+	color: #fff;
+}

@@ -4,6 +4,10 @@ let outputBase = document.querySelector("#base-output");
 let convertBtn = document.querySelector(".conv-container button");
 let convRes = document.querySelector(".result");
 
+var body = document.body;
+
+body.style.height = `${window.innerHeight}px`;
+
 let convertNumber = () => {
 	let numVal = baseNum.value;
 	let inputBaseVal = inputBase.value;

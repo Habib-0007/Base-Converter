@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins");
+@import url("https://fonts.googleapis.com/css2?family=Jost");
 
 * {
 	padding: 0;
@@ -6,7 +6,7 @@
 	border: none;
 	outline: none;
 	box-sizing: border-box;
-	font-family: "Poppins", sans-serif;
+	font-family: "Jost", sans-serif;
 }
 
 :root {
@@ -103,13 +103,13 @@ header h1 {
 	color: #fff;
 }
 
-.select-btns select::after {
-	content: "\25BC";
+.select-btns div::after {
+	content: "\25bc";
 	position: absolute;
-	top: 50%;
-	right: 10px;
+	top: 49%;
+	right: 4px;
 	transform: translateY(-50%);
-	color: #777;
+	color: #fff;
 	pointer-events: none;
 }
 

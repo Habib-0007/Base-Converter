@@ -104,7 +104,7 @@ header h1 {
 }
 
 .select-btns div::after {
-	content: "\25bc";
+	content: "\25BC";
 	position: absolute;
 	top: 49%;
 	right: 4px;
